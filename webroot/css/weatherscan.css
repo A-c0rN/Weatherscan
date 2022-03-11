@@ -6084,6 +6084,12 @@ label{
   text-align: center;
   font-weight: 800;
   transform: scale(102.5%,100%);
+}
+
+.forecast-tile.hourly:last-child .high {
+  font-family: Interstate;
+  top: -2.5px;
+  font-weight: 800;
   background-position: -8.8% 7.7%;
   position: relative;
   padding-bottom: 15%;
