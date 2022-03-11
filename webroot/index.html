@@ -16,7 +16,7 @@
 </head>
 
 
-<body>
+<body style="overflow: hidden;">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -45,7 +45,7 @@
 <script type="text/javascript" src="js/newweathermanager.js"></script>
 <div id="startup" class="settings">
   <div class="blackbar">
-    <div id="introdetails" class="introtext" style="display: ">
+    <div id="introdetails" class="introtext">
       <div id="headendid" class="introtext">headend id:</div>
       <div id="serialnumber" class="introtext">serial number:</div>
       <div id="locationname" class="introtext">location name:</div>
@@ -256,7 +256,7 @@
           <div id="coords">coordinates: </div>
           <button class="removelocbutton">Remove Location</button>
         </div>
-        <div id="cctickerloc10" class="cctickerloc" style="display:;">CCTicker Location 10
+        <div id="cctickerloc10" class="cctickerloc">CCTicker Location 10
           <div id="locationname">name: </div>
           <div id="locationdisplayname">display name: </div>
           <div id="coords">coordinates: </div>
@@ -266,11 +266,11 @@
     </div>
   </div>
     <div id="weathersettingspane" class="settingspane" style="display: none">
-      <div id="pageleft" class="pagearrow">‹</div>
-      <div id="pageright" class="pagearrow">›</div>
+      <div id="pageleft" class="pagearrow"><</div>
+      <div id="pageright" class="pagearrow">></div>
       <div id="weathertitle" class="settingspanetitle">Weather Data Settings</div>
 
-      <div id="currentconditionspage" class="weathersettingspage" style="display: ">
+      <div id="currentconditionspage" class="weathersettingspage">
       <div id="currenttile" class="weathersettingspagetitle">Current Conditions Slide</div>
       <div class=setlocname>
         <label for="8 cities">Current Location Name</label>
@@ -483,7 +483,7 @@
       </form>
     </div>
     </div>
-    <img class="intellistarlogo" src="images/intellistarlogo.png"/>
+    <img class="intellistarlogo" style="width: 60%; height: auto;" src="images/intellistarlogo.png"/>
   </div>
 
 <div id="main" class="container">
@@ -503,7 +503,7 @@
       <!-- CURRENT CONDITIONS AND FORECAST-->
       <div class="info-slide bulletin" style="display: none">
         <div class="info-subheader">
-          <span id="subhead-titlei">WEATHER BULLETIN</span><span id="subhead-noaa" style="display:">FROM THE NATIONAL WEATHER SERVICE</span>
+          <span id="subhead-titlei">WEATHER BULLETIN</span><span id="subhead-noaa" >FROM THE NATIONAL WEATHER SERVICE</span>
         </div>
         <div class='blue curve left'></div>
         <div class='blue curve bottom'></div>
@@ -952,7 +952,7 @@
             <span class="radar-color-legend-winter" style="display: none"><div class="pastlegend">Past 3 Hours</div>Rain <img class="rainlonger" src="images/precip-legend.png" alt="Past 3 Hours"/>&nbsp;Mix ;<img src="images/precip-legend-mix.png" alt="Past 3 Hours"/>&nbsp;Snow <img src="images/precip-legend-snow.png" alt="Past 3 Hours"/></span>
           </div>
         </div>
-        <div id="radar-container" class="info-slide-content radar-content" style="">
+        <div id="radar-container" class="info-slide-content radar-content">
           <div class='tempunavailable' style="display: none">Temporarily Unavailable</div>
           <div id="radar-1" class="map"></div>
         </div>
@@ -960,7 +960,7 @@
 
       <!-- Intros -->
       <div class="info-slide city-slide-intro" style="display:none">
-        <div class="weatherscancopyright" style="display:none"> <span class="copyrighttext"> Weatherscan is brought to you by The Weather Channel®<br> and MIDCO </span></div>
+        <div class="weatherscancopyright" style="display:none"> <span class="copyrighttext"> Weatherscan is brought to you by Weather Group Television<br> and XFINITY TV </span></div>
         <div class='cityaccent viii curve' style="display:none"></div>
         <div class='cityaccent ii curve' style="display:none"></div>
         <div class='cityaccent i curve' style="display:none"></div>
@@ -1668,7 +1668,7 @@
     <div id="current-temp"></div>
     <div id="current-info"></div>
     <div id="current-noreport" style="display: none">no report</div>
-    <div id="current-info-severe" style="display:"></div>
+    <div id="current-info-severe" ></div>
     <div id="current-info-details" style="display: none"></div>
   </div>
 
@@ -1679,7 +1679,7 @@
   </div>
   <div id="minimap-title"><span>PAST 3 HOURS</span></div>
   <div id="minimap"></div>
-  <div id="logo-area"><img src="images/midco_logo_shadow.png"/></div>
+  <div id="logo-area"><img src="images/xfinity.png"/></div>
 
   <div id="forecast-shadow">
     <div id="normalheader" class='forecast-header'>

@@ -2,13 +2,14 @@ var noreportmode = false;
 var marqueeforecasttype = 'forecast'
 //do audio thing and second marquee
 $(function(){
-	weatherAudio.playCallback = function(tags) {
-		$('.track-info').text('playing "' + tags.title + '" by ' + tags.artist);
-	}
+	// Cannot find this functionality on the original Weatherscan units, so taking it out.
+	// weatherAudio.playCallback = function(tags) {
+	// 	$('.track-info').text('playing "' + tags.title + '" by ' + tags.artist);
+	// }
 	$('#marquee2').text(weatherInfo.ad)
 	setTimeout(function() {
 		$('#marquee2').marquee({
-			speed: 170, pauseOnHover: true
+			speed: 170, pauseOnHover: false
 		});
 	}, 100)
 });
@@ -27,7 +28,7 @@ function MarqueeMan() {
 			$('#marqueeSevere').text(weatherInfo.bulletin.severewarnings[sidx].desc)
 			$('#marqueeSevere')
 				.marquee('destroy')
-				.marquee({speed: 170, delayBeforeStart: 1000, pauseOnHover: true, pauseOnCycle: true})
+				.marquee({speed: 170, delayBeforeStart: 1000, pauseOnHover: false, pauseOnCycle: true})
 				.on('finished', function(){
 					switchSevereMarquee((sidx < weatherInfo.bulletin.severewarnings.length) ? sdix + 1 : 0)
 				});
@@ -55,7 +56,7 @@ function MarqueeMan() {
 			$('.marqueeheadersevere').fadeIn(0)
 			$('#marqueeSevere').text(weatherInfo.bulletin.marqueewarnings[0].desc)
 			$('#marqueeSevere')
-				.marquee({speed: 170, delayBeforeStart: 1000, pauseOnHover: true, pauseOnCycle: true})
+				.marquee({speed: 170, delayBeforeStart: 1000, pauseOnHover: false, pauseOnCycle: true})
 		} else {
 			$('#marqueeSevere')
 				.marquee('destroy')
@@ -109,7 +110,7 @@ function MarqueeMan() {
 				}
 				$('#marquee-container')
 					.marquee('destroy')
-					.marquee({speed: 200, pauseOnHover:true, delayBeforeStart:3000})
+					.marquee({speed: 200, pauseOnHover:false, delayBeforeStart:3000})
 					.on('finished', refreshMarquee);
 		}
 		//init and loop the things

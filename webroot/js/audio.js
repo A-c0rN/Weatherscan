@@ -154,8 +154,6 @@ function WeatherAudio() {
 	}
 
 
-
-
 	// click for debugging or whater you want
 	$('body').on('click', function(){
 		//$player.jPlayer("playHead", 100);

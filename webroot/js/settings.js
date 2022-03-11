@@ -307,7 +307,7 @@ $(function(){
     $("#locationsettingspane").fadeIn(0)
     $("#weathersettingspane").fadeOut(0)
   })
-  /*$("#weathersettings").click(function(button) {
+  $("#weathersettings").click(function(button) {
     settingstype = "weathersettings"
     $("#apperancesettings").text("appearance settings")
     $("#locationsettings").text("location settings")
@@ -315,7 +315,7 @@ $(function(){
     $("#apperancesettingspane").fadeOut(0)
     $("#locationsettingspane").fadeOut(0)
     $("#weathersettingspane").fadeIn(0)
-  })*/
+  })
   $("#savebutton").click(function(button) {
     if (settingstype == "locationsettings"){
       saveLocSettings();
@@ -327,6 +327,7 @@ $(function(){
   var page = $('currentconditionspage').
 }*/
 // enable/disable settingspane
+
 $(document).on('keydown',function(e) {
     if(e.which == 27) {
       if($('.blackbar #settings').is(':hidden')) {

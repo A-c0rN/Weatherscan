@@ -3375,6 +3375,7 @@ flex-direction: row;
 }
 .info-slide-content.gardenindex .frost-pane.right .bar .barcat {
   -webkit-transform: translateZ(0);
+  transform: translateZ(0);
   display: flex;
   width: 41px;
   height: 52.5px;
@@ -3560,7 +3561,7 @@ body, html {
   margin-top: 440px;
 }
 .blackbar {
-  height: 23.5%;
+  height: 18%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -3569,7 +3570,7 @@ body, html {
 .blackbar .introtext  {
   position: absolute;
   width: 400px;
-  left: 8.05%;
+  left: 2%;
   top: 4.6%;
   display: flex;
   flex-direction: row;
@@ -3601,7 +3602,7 @@ body, html {
   position: absolute;
   width: 500px;
   height: 175px;
-  right: 1.9%;
+  right: -3%;
   top: -9px;
 }
 .settingspanetitle {
@@ -4061,8 +4062,11 @@ label{
   height: 85%;
   z-index: 7;
   -webkit-mask-image: url(/images/yellow-curve.svg);
+  mask-image: url(/images/yellow-curve.svg);
   -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
   -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
   filter: drop-shadow(-2px 0 4px rgba(0, 0, 0, .75));
 }
 
@@ -4081,7 +4085,9 @@ label{
 
 .city-info-slide .blue.left {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/bluebuildings.jpg);
   background-size: 465% 71%;
   background-position: -10% -27.75%;
@@ -4096,7 +4102,9 @@ label{
 
 .city-info-slide .blue.bottom {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/bluebuildings.jpg);
   background-size: 465% 70.5%;
   background-position: -11.5% 71.6%;
@@ -4158,8 +4166,11 @@ label{
   height: 85%;
   z-index: 7;
   -webkit-mask-image: url(/images/red-curve-severe.svg);
+  mask-image: url(/images/red-curve-severe.svg);
   -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
   -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
   filter: drop-shadow(-2px 0 4px rgba(0, 0, 0, .75));
 }
 .severe-city-info-slide .yellow.right2 {
@@ -4283,6 +4294,7 @@ label{
   -webkit-mask-image: url(/images/red-curve-dark.svg);
   mask-image: url(/images/red-curve-dark.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
 }
 
 .bulletin .white.right {
@@ -4908,12 +4920,13 @@ label{
 }
 
 .info-slide .cityaccent.viii {
-  background-color: #001782
+  background-color: #001782;
   -webkit-mask-image: url(/images/airport-curve.svg);
   mask-image: url(/images/airport-curve.svg);
   -webkit-mask-size:200% 100%;
   mask-size:200% 100%;
   -webkit-mask-position: 0 100%;
+  mask-position: 0 100%;
   width:57.5%;
   height:157.5%;
   bottom:-22.25%;
@@ -4967,7 +4980,9 @@ label{
 
 .airport-slide .blue.left {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/airplaneslide.png);
   background-size: 500% 73.2%;
   background-position: -8.7% 7.2%;
@@ -4982,7 +4997,9 @@ label{
 
 .airport-slide .blue.bottom {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/airplaneslide.png);
   background-size: 500% 73.2%;
   background-position: -10.5% 114%;
@@ -5158,7 +5175,9 @@ label{
 
 .health .blue.left {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/trees.png);
   background-size: 570% 63.3%;
   background-position: 6.8% -2%;
@@ -5173,7 +5192,9 @@ label{
 
 .health .blue.bottom {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/trees.png);
   background-size: 570% 63.3%;
   background-position: 5.6% 77.6%;
@@ -5252,8 +5273,11 @@ label{
   height: 85%;
   z-index: 7;
   -webkit-mask-image: url(/images/golf-curve.svg);
+  mask-image: url(/images/golf-curve.svg);
   -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
   -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
   filter: drop-shadow(-4px 0 4px rgba(0, 0, 0, .75)) saturate(.2);
 }
 .golf .yellow.right2 {
@@ -5270,7 +5294,9 @@ label{
 
 .golf .blue.left {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/golfslide.png);
   background-size: 500% 60.2%;
   background-position: 1.1% 4%;
@@ -5284,7 +5310,9 @@ label{
 
 .golf .blue.bottom {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/golfslide.png);
   background-size: 500% 60.2%;
   background-position: 0% 79.1%;
@@ -5362,8 +5390,11 @@ label{
   height: 85%;
   z-index: 7;
   -webkit-mask-image: url(/images/beach-curve.svg);
+  mask-image: url(/images/beach-curve.svg);
   -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
   -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
   filter: drop-shadow(-4px 0 4px rgba(0, 0, 0, .75)) saturate(.2) brightness(2);
 }
 .garden .yellow.right2 {
@@ -5380,7 +5411,9 @@ label{
 
 .garden .blue.left {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/gardenbackground.png);
   background-size: 550% 65.7%;
   background-position: 6.5% -10.2%;
@@ -5394,7 +5427,9 @@ label{
 
 .garden .blue.bottom {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/gardenbackground.png);
   background-size: 546% 67.3%;
   background-position: 5.1% 76.3%;
@@ -5472,8 +5507,11 @@ label{
   height: 85%;
   z-index: 7;
   -webkit-mask-image: url(/images/ski-curve.svg);
+  mask-image: url(/images/ski-curve.svg);
   -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
   -webkit-mask-size: 200% 200%;
+  mask-size: 200% 200%;
   filter: drop-shadow(-4px 0 4px rgba(0, 0, 0, .75)) saturate(.2);
 }
 .ski .yellow.right2 {
@@ -5490,7 +5528,9 @@ label{
 
 .ski .blue.left {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/skibackground.png);
   background-size: 525% 74.9%;
   background-position: 5.67% 8.5%;
@@ -5504,7 +5544,9 @@ label{
 
 .ski .blue.bottom {
   -webkit-mask-image: url(/images/blue-curve.svg);
+  mask-image: url(/images/blue-curve.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/skibackground.png);
   background-size: 525% 74.9%;
   background-position: 4.4% 124%;
@@ -6042,12 +6084,7 @@ label{
   text-align: center;
   font-weight: 800;
   transform: scale(102.5%,100%);
-
-}
-.forecast-tile.hourly:last-child .high {
-  font-family: Interstate;
-  top: -2.5px;
-  font-weight: 800;
+  background-position: -8.8% 7.7%;
   position: relative;
   padding-bottom: 15%;
   opacity: 0;
@@ -6104,9 +6141,9 @@ label{
 #logo-area img {
   display: block;
   position: absolute;
-  width: 65%;
-  top: 19%;
-  right: 5%
+  width: 72%;
+  top: 9%;
+  right: 3%
 }
 
 #arrow-img {
@@ -6196,7 +6233,9 @@ label{
 
 .bulletin .blue.left {
   -webkit-mask-image: url(/images/red-curve-dark.svg);
+  mask-image: url(/images/red-curve-dark.svg);
   -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
   background-image: url(/images/warning.png);
   background-size: 470% 60.4%;
   background-position: -8.8% 7.7%;
@@ -6219,9 +6258,12 @@ label{
   left: -9.25%;
   opacity: 1;
   z-index: 2;
-  /*-webkit-mask-image: url(/images/red-curve-dark.svg);
+
+  -webkit-mask-image: url(/images/red-curve-dark.svg);
   mask-image: url(/images/red-curve-dark.svg);
-  -webkit-mask-size: 200% 100%;*/
+  -webkit-mask-size: 200% 100%;
+  mask-size: 200% 100%;
+
 }
 
 
